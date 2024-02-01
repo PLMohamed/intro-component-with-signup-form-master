@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: var(--red) url("../assets/bg-intro-desktop.png") no-repeat
+        center top/cover;
+}
+
+body > #root {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10.5vw;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 763px) {
+    body > #root {
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+        margin: 16px 0;
+    }
+}

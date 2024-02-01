@@ -1,0 +1,27 @@
+.hero {
+    width: 100%;
+    color: white;
+    margin-top: 36px;
+}
+
+.hero > h1 {
+    margin-bottom: 16px;
+}
+
+.hero > p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 763px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero > h1 {
+        font-size: 24px;
+    }
+
+    .hero > p {
+        font-size: 14px;
+    }
+}

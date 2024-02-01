@@ -1,0 +1,32 @@
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.right .info {
+    text-align: center;
+    background: var(--blue);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.right > * {
+    width: 100%;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.info > span {
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 763px) {
+    .right {
+        padding-bottom: 36px;
+    }
+}

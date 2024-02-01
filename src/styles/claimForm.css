@@ -1,0 +1,86 @@
+.form {
+    background: white;
+    padding: 30px 40px !important;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.formContainer > .input-field {
+    width: 100%;
+    text-align: right;
+}
+
+.formContainer > .input-field > input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: 2px solid var(--grayishBlue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.formContainer > .input-field > input:focus {
+    outline: none;
+    border: 2px solid var(--blue);
+}
+
+.formContainer > .input-field > input.input-error {
+    border: 2px solid var(--red);
+    background-image: url("../assets/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.formContainer > .input-field > span {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.formContainer > button {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: none;
+    background: var(--green);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.formContainer > button:hover {
+    opacity: 0.9;
+}
+
+.formContainer > button:active {
+    opacity: 0.8;
+}
+
+.formContainer > p {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.formContainer > p > span {
+    color: var(--red);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 763px) {
+    .form {
+        padding: 20px 20px !important;
+    }
+}
